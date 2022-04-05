@@ -383,7 +383,7 @@ Great, let's get those posts into the database with the seed script:
 npx prisma db seed
 ```
 
-💿 Now update the `app/models/post.server.ts` file to read from the SQLite database:
+💿 Now update the `app/models'.server.ts` file to read from the SQLite database:
 
 ```ts filename=app/models/post.server.ts
 import { prisma } from "~/db.server";
@@ -401,7 +401,7 @@ export async function getPosts() {
 
 <docs-warning>You only need to ever do this when you change the Prisma schema and update the Prisma client. Normally you don't need to restart the dev server during development. Nice that it's so fast though right?</docs-warning>
 
-With the server up and running again, you should be able to go to `http://localhost:3000/post` and the posts should still be there, but now they're coming from SQLite!
+With the server up and running again, you should be able to go to `http://localhost:3000/posts` and the posts should still be there, but now they're coming from SQLite!
 
 ## Dynamic Route Params
 
